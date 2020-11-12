@@ -5,14 +5,29 @@ Gets the absolute positions of a HTML element on the page.
 It returns a rect-like object this:
 
 ```js
-var rect = {
+// absPos() returns:
+var abs_rect = {
   left: 9,
-  right: 100,
   top: 50,
+  right: 100,
   bottom: 180,
   width: 91,
   height: 130,
+  x: 9, // alias for left
+  y: 50, // alias for top
+  vx: 0, // viewport's x
+  vy: 0, // viewport's y
 };
+
+// viewportPos() returns:
+var viewport_rect = {
+  left: 9,
+  top: 50,
+  right: 100,
+  bottom: 180,
+  width: 91,
+  height: 130,
+}
 ```
 
 ## Installation
