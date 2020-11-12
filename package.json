@@ -1,6 +1,6 @@
 {
   "name": "abspos",
-  "description": "Gets the absolute positions of a HTML element on the page.",
+  "description": "Gets the absolute positions of a HTML element.",
   "repository": "https://github.com/maccliu/abspos",
   "version": "1.0.0",
   "license": "MIT",

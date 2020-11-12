@@ -1,6 +1,6 @@
 # abspos
 
-Gets the absolute positions of a HTML element on the page. 
+Gets the absolute positions of a HTML element on the page.
 
 It returns a rect-like object this:
 
@@ -19,12 +19,19 @@ var rect = {
 
 ```bash
 npm install abspos
+
+# if you like to use yarn
 yarn add abspos
 ```
 
 ## Usage
 
 ```js
-var el = document.getSelector();
-var rect = abspos();
+var el = document.getElementById("div1");
+
+var abs_rect = absPos(el);
+console.log(abs_rect);
+
+var viewport_rect = viewportPos(el);
+console.log(viewport_rect);
 ```

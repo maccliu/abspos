@@ -9,8 +9,8 @@ function absPos(el) {
   var rect = el.getBoundingClientRect();
 
   // window.scrollX and window.scrollY. 
-  // Aka. the current viewport's x and y.
-  // see:
+  // aka. the current viewport's x and y.
+  // see: https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX
   var vx = (window.pageXOffset !== undefined) ? window.pageXOffset : (document.documentElement || document.body.parentNode || document.body).scrollLeft;
   var vy = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
@@ -21,8 +21,8 @@ function absPos(el) {
     bottom: rect.bottom + vy,
     width: rect.right - rect.left,
     height: rect.bottom - rect.top,
-    x: rect.left + vx,
-    y: rect.top + vy,
+    x: rect.left + vx, // alias for left
+    y: rect.top + vy, // alias for top
     vx: vx,
     vy: vy,
   };
