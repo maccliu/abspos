@@ -1,0 +1,15 @@
+{
+  "name": "abspos",
+  "description": "Gets the absolute positions of a HTML element on the page.",
+  "repository": "https://github.com/maccliu/abspos",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "abspos.js",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "author": "Macc Liu <maccliu@qq.com>"
+}

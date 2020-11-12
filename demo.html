@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo1</title>
+  <style>
+    html {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 10pt;
+      line-height: 2;
+    }
+    .label {
+      display: inline-block;
+      width: 110px;
+      background: #eee;
+    }
+    .longdiv {
+      height: 400px;
+    }
+  </style>
+  <script src="abspos.js"></script>
+</head>
+
+<body>
+  <h1>abspos</h1>
+  <h2>Demo</h2>
+  <div class="longdiv">Please scrolls the page and checks the returned values of two functions.</div>
+  <div>
+    <span class="label">absPos(): </span><span id="abspos"></span><br>
+    <span class="label">viewportPos(): </span><span id="viewportpos"></span>
+  </div>
+  <div class="longdiv"></div>
+  <div class="longdiv"></div>
+  <div class="longdiv"></div>
+
+  <script>
+    window.setInterval(function() {
+      var apos = document.getElementById("abspos");
+      var vpos = document.getElementById("viewportpos");
+      apos.innerHTML = JSON.stringify(absPos(apos));
+      vpos.innerHTML = JSON.stringify(viewportPos(vpos));
+    }, 1000);
+  </script>
+</body>
+
+</html>
